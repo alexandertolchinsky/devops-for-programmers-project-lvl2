@@ -6,3 +6,5 @@ deploy:
 	ansible-playbook playbook.yml -i inventory.ini --tags deploy --vault-password-file vault-password
 prepare-env:
 	ansible-playbook playbook.yml -i inventory.ini --tags prepare-env --vault-password-file vault-password
+install-datadog:
+	ansible-playbook playbook.yml -i inventory.ini --tags datadog --vault-password-file vault-password

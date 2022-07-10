@@ -2,3 +2,5 @@ REDMINE_DB_POSTGRES: db-postgresql-ams3-49394-do-user-11973174-0.b.db.ondigitalo
 REDMINE_DB_PORT: 25060
 REDMINE_DB_USERNAME: doadmin
 REDMINE_DB_DATABASE: defaultdb
+
+datadog_site: datadoghq.eu
