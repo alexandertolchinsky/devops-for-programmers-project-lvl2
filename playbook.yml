@@ -5,7 +5,7 @@
   tasks:
     - name: update package cache
       ansible.builtin.apt:
-        update_cache: yes
+        update_cache: true
       tags: update_cache
     - name: prepare env
       ansible.builtin.template:
