@@ -1,2 +1,2 @@
-PIP_INSTALL_PACKAGES:
+pip_install_packages:
   - name: docker
