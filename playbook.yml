@@ -9,7 +9,7 @@
       tags: update_cache
     - name: prepare env
       ansible.builtin.template:
-        src: .env.j2
+        src: templates/.env.j2
         dest: ~/.env
         mode: 0644
       tags: prepare-env

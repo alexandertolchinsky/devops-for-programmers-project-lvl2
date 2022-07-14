@@ -3,4 +3,12 @@ REDMINE_DB_PORT: 25060
 REDMINE_DB_USERNAME: doadmin
 REDMINE_DB_DATABASE: defaultdb
 
-datadog_site: datadoghq.eu
+DATADOG_SITE: datadoghq.eu
+DATADOG_CHECKS:
+  http_check:
+    init_config:
+    instances:
+      - name: Application health check status
+        url: "http://localhost:3000"
+        timeout: 5
+        method: GET
