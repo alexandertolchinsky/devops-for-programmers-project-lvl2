@@ -3,8 +3,8 @@ REDMINE_DB_PORT: 25060
 REDMINE_DB_USERNAME: doadmin
 REDMINE_DB_DATABASE: defaultdb
 
-DATADOG_SITE: datadoghq.eu
-DATADOG_CHECKS:
+datadog_site: datadoghq.eu
+datadog_checks:
   http_check:
     init_config:
     instances:
