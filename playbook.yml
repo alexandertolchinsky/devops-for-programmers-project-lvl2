@@ -25,4 +25,4 @@
 - hosts: webservers
   roles:
     - role: datadog.datadog
-      tags: datadog
+      tags: setup, datadog

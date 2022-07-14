@@ -1,8 +1,10 @@
 REDMINE_DB_POSTGRES: db-postgresql-ams3-49394-do-user-11973174-0.b.db.ondigitalocean.com
 REDMINE_DB_PORT: 25060
 REDMINE_DB_USERNAME: doadmin
+REDMINE_DB_PASSWORD: "{{ VAULT_REDMINE_DB_PASSWORD }}"
 REDMINE_DB_DATABASE: defaultdb
 
+datadog_api_key: "{{ VAULT_DATADOG_API_KEY }}"
 datadog_site: datadoghq.eu
 datadog_checks:
   http_check:
