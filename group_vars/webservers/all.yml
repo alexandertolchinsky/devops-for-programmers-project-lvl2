@@ -4,9 +4,9 @@ REDMINE_DB_USERNAME: doadmin
 REDMINE_DB_PASSWORD: "{{ VAULT_REDMINE_DB_PASSWORD }}"
 REDMINE_DB_DATABASE: defaultdb
 
-datadog_api_key: "{{ VAULT_DATADOG_API_KEY }}"
-datadog_site: datadoghq.eu
-datadog_checks:
+DATADOG_API_KEY: "{{ VAULT_DATADOG_API_KEY }}"
+DATADOG_SITE: datadoghq.eu
+DATADOG_CHECKS:
   http_check:
     init_config:
     instances:
